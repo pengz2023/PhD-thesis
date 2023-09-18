@@ -1,0 +1,5 @@
+Step 1. Data generation. Run the R code in the file "./demo_dat/generate_Data_precisionMatrix.R" to generate a 50 X 50 precision matrix "sigma_inv"(stored in the csv file "./demo_data/GNBP_sim_p50_sigmainv5(3-6).csv") and a dataset(stored in the csv file "./demo_data/GNBP_sim_p50n100_5nonzero_data(3-6)1.csv") containing 100 samples simulated from a multivariate normal distribution N(0, "sigma_inv").
+
+Step 2. Demo for each method inlcuding GNBP, tGNBP, quasi-tGNBP-diag, quasiGNBP-diag and quasiGNBP. Run the matlab code in the correspoding file "./demo_code/demo_GNBP.m", "./demo_code/demo_tGNBP.m", "./demo_code/demo_quasi_tGNBP_diag.m", "./demo_code/demo_quasiGNBP_diag.m" and "./demo_code/demo_quasiGNBP.m".
+
+Step 3. Network reconstrction. Run the R code in the file "./adjacenyMatrix/network_plot.R" to reconstruct network for each method based on the adjaceny matrix generated from Step 2.
